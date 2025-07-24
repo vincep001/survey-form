@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vince suvery form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>SIMPLE SURVEY FORM</h1>
+    <form id="survey-form">
+    <p>fill up the following:</p>
+    <!-- personal info -->
+        <label for="name">Name</label>
+    <input id="name" type="text" placeholder="your name" required><br><br>
+
+    <label for="email">Email</label>
+    <input id="email" type="text" placeholder="your email" required><br><br>
+
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" min="15" max="50" placeholder="optional">
+<!--gender and age-->
+    <p>What is your gender?</p>
+    <label for="gender">Male</label>
+    <input type="radio" id="Male" name="gender" value="Male" required> 
+
+    <label for="gender">Female</label>
+    <input type="radio" id="Female" name="gender" value="Female" required>
+<!--PLACE, AND REGIONS-->
+
+<label for="island-group">island group:</label>
+<select name="island-group" id="island-group"> required
+<option value="">select place</option>
+<option value="Luzon">Luzon</option>
+<option value="Visayas">Visayas</option>
+<option value="Mindanao">Mindanao</option>
+</select>
+
+<label for="region">Region:</label>
+<select name="region" id="region"> required
+<option value="">Select Region</option>
+
+<optgroup label="Luzon">
+<option value="NCR">NCR - National Capital Region</option>
+<option value="CAR">CAR - Cordillera Administrative Region</option>
+<option value="Region 1">Region 1 - ilocos region</option>
+<option value="Region 2">Region 2 -Cagayan Valley</option>
+<option value="Region 3">Region 3 - Central luzon</option>
+<option value="Region 4-A">Region 4-A - CALABARZON</option>
+<option value="Region 4-B">Region 4-B - MIMAROPA</option>
+<option value="Region V">Region V - Bicol Region</option>
+</optgroup>
+
+<optgroup label="Visayas">
+<option value="Region 6">Region 6 - Western Visayas</option>
+<option value="Region 7">Region 7 - Central Visayas</option>
+<option value="Region 8">Region 8 - Eastern Visayas</option>
+</optgroup>
+
+<optgroup label="Mindanao">
+    <option value="Region 9">Region 9 - Zamboanga Peninsula</option>
+    <option value="Region 10">Region 10 - Northern Mindanao</option>
+    <option value="Region 11">Region 11 - Davao Region</option>
+    <option value="Region 12">Region 12 - SOCCSKSARGEN</option>
+    <option value="Region 13">Region 13 - Caraga</option>
+    <option value="BARMM">BARMM - Bangsamoro Autonomous Region</option>
+</optgroup>
+</select>
+
+    
+<!--favorite things-->
+    <p>What is your favorite filipino food in the following?(choose one)</p>
+    
+    <label for="food">Adobo</label>
+    <input type="radio" id="Adobo" name="foods" required><br>
+    
+    <label for="food">Sinigang</label>
+    <input type="radio" id="Sinigang" name="foods" required><br>
+    
+    <label for="food">Kare-kare</label>
+    <input type="radio" id="Kare-kare" name="foods" required><br>
+    
+    <label for="food">Lechon</label>
+    <input type="radio" id="Lechon" name="foods" required><br>
+    
+    <label for="food">Bulalo</label>
+    <input type="radio" id="Bulalo" name="foods" required><br>
+
+    <label for="food">If none of the above, please specify your favorite food below:</label>
+    <input type="text" name="foods" id="food"><br>
+
+    <p>What time you usually sleep and waking up?</p>
+
+    <label for="sleep">Time of sleep</label>
+    <input type="time" id="sleep" required>
+
+    <label for="wake">Waking up</label>
+    <input type="time" id="wake" required><br><br>
+    
+    <label for="feedback">Feedback</label><br>
+    <textarea name="feedback" id="feedback" rows="4" cols="30" required></textarea>
+     <button type="submit">Submit Feedback</button>
+</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
