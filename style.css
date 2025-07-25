@@ -1,3 +1,41 @@
+/* Modern region select styling */
+.region-select {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+select#region {
+  width: 80;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 12px;
+  border: 1.5px solid #4b56b8;
+  background: #f7f7fa;
+  color: #222;
+  box-shadow: 0 2px 8px rgba(75,86,184,0.08);
+  margin-bottom: 0;
+
+}
+
+select#region optgroup {
+  font-weight: bold;
+  color: #4b56b8;
+  background: #eaf0fb;
+}
+
+select#region option {
+  padding: 8px;
+  color: #333;
+  background: #fff;
+}
+
+@media (max-width: 600px) {
+  .region-select {
+    grid-template-columns: 1fr;
+  }
+}
 body {
     margin: 0;
     padding: 0;
@@ -64,7 +102,7 @@ input, textarea, select {
 input:hover, input:focus,
 textarea:hover, textarea:focus,
 select:hover, select:focus {
-  background-color:#b2a4bd; /* light gray when hovered/focused */
+  background-color:#ada0b6; /* light gray when hovered/focused */
   outline: none; /* remove default blue outline */
 }
 button {

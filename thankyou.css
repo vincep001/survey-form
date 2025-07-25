@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thankyou-container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(33, 147, 176, 0.2);
+  text-align: center;
+}
+
+.thankyou-container h1 {
+  color: #2193b0;
+  margin-bottom: 16px;
+}
+
+.thankyou-container p {
+  color: #333;
+  margin-bottom: 24px;
+  font-size: 1.1em;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #2193b0;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: #6dd5ed;
+  color: #2193b0;
+}
