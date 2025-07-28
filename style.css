@@ -1,22 +1,23 @@
-/* Modern region select styling */
-.region-select {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  margin-bottom: 20px;
-}
-
 select#region {
-  width: 80;
-  padding: 12px;
-  font-size: 15px;
+  width: 350px;
+  max-width: 100%;
+  padding: 5px;
+  font-size: 16px;
   border-radius: 12px;
   border: 1.5px solid #4b56b8;
   background: #f7f7fa;
   color: #222;
   box-shadow: 0 2px 8px rgba(75,86,184,0.08);
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: background 0.2s, border-color 0.2s;
+}
 
+select#region:focus, select#region:hover {
+  background: #eaf0fb;
+  border-color: #2193b0;
 }
 
 select#region optgroup {
@@ -29,12 +30,6 @@ select#region option {
   padding: 8px;
   color: #333;
   background: #fff;
-}
-
-@media (max-width: 600px) {
-  .region-select {
-    grid-template-columns: 1fr;
-  }
 }
 body {
     margin: 0;
